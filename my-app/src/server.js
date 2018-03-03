@@ -4,19 +4,19 @@ var request = require('request');
 var cheerio = require('cheerio');
 var app     = express();
 
-var tot = 0;
 
-var tab = [];
 
 var star1 = 0;
 var star2 = 0;
 var star3 = 0;
 
+module.exports = {
 
 
-exports.getRestaurant = function(){
+getRestaurant : function(){
+  var tab = [];
+  var tot = 0;
   var url = 'https://restaurant.michelin.fr/restaurants/france/restaurants-1-etoile-michelin/restaurants-2-etoiles-michelin/restaurants-3-etoiles-michelin';
-
 
   for(var i = 1; i <= 35; i++){
 
@@ -114,6 +114,7 @@ exports.getRestaurant = function(){
       })
 
   }
+}
 }
 
 

@@ -6,6 +6,22 @@ var app     = express();
 var stringSimilarity = require('string-similarity');
 var dame = 1;
 
+function getPictureRestaurant(url){
+  request(url, function (error, response, body) {
+    if (!error && response.statusCode == 200) {
+      var $ = cheerio.load(html);
+
+      $('.slick-track').filter(function(){
+         var data = $(this);
+         console.log(data);
+         var image = data.first().attr("src");
+         image = String(image);
+         //console.log(image);
+         return image;
+       })
+    }
+  })
+}
 
 function miseEnForme(objet){
   objet = objet.toLowerCase();

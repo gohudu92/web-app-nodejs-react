@@ -1,0 +1,44 @@
+header{
+  background-color: #088A08;
+}
+body {
+  padding: 50px;
+  margin:0px;
+  font-family: sans-serif;
+  text-align: center;
+}
+#container {
+  width: 100%;
+  justify-content: center;
+}
+
+#containerRestaurant{
+  display: flex;
+
+}
+
+#link{
+  text-decoration: none;
+  color:inherit;
+}
+
+
+.joli {
+  text-align : center;
+  padding : 1em;
+  border : 0.2em solid black;
+  width  : 30em;
+  height : 30em;
+  display: block;
+  margin:auto;
+  display: inline-block;
+  margin-top: 1em;
+  margin-left: 1em;
+  font-weight: bold;
+  color: purple;
+}
+ul {
+list-style:none;
+margin-left:0;
+padding-left:0;
+}
