@@ -49,7 +49,7 @@ for(var i = 0; i < multiElements.length; i+=2) {
      var oneRow = [];
      oneRow.push(multiElements.slice(i, i+2).map(function(restaurant){
          console.log(restaurant.image);
-         return <a href={restaurant.url} id="link"><div className="joli" style={{backgroundImage: "url(" + restaurant.image + ")"}}> {restaurant.name} <br /> {restaurant.offer} <br /> <br /> {restaurant.city} <br /> <br /> {restaurant.stars} étoiles</div></a>
+         return <a href={restaurant.url} id="link"><div className="joli" style={{backgroundImage: "url(" + restaurant.image + ")"}}> <span>{restaurant.name} <br /> {restaurant.offer} <br /> <br /> {restaurant.city} <br /> <br /> {restaurant.stars} étoiles</span></div></a>
 }))
 separateElements.push(oneRow.map(itm => {return <div>{itm}</div>}))
 }

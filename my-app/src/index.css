@@ -34,9 +34,11 @@ body {
   display: inline-block;
   margin-top: 1em;
   margin-left: 1em;
-  font-weight: bold;
-  color: purple;
-}
+  color: black;
+  }
+  .joli span{
+    background-color: #A4A4A455;
+  }
 ul {
 list-style:none;
 margin-left:0;
