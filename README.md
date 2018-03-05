@@ -11,3 +11,7 @@ server.js : Get the restaurant from michelin
 In "my-app" folder, there is the website which display all the offer and the restaurant. 
 
 Link : https://serene-reef-14648.herokuapp.com/
+
+If you want to redo all the process, you have to go in my-app/src/ and execute with node server.js, after 1server.js and finally 2server.js.
+
+After you can go in my-app folder and execute npm start.
